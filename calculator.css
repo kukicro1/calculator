@@ -16,7 +16,7 @@ body{
 }
 div{
     border: black 1px solid;
-    border-radius: 3%;
+    border-radius: 15px;
 }
 #calculator{
     display: flex;
@@ -24,13 +24,33 @@ div{
     width: 370px;
     height: 600px;
     flex-direction: column;
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(160, 160, 160);
 }
 #display{
     height: 180px;
     margin: 10px;
     background-color: rgb(230, 230, 230);
-
+    padding-top: ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+#currentOperation {
+    border: none;
+    height: 60px;
+    width: 320px;
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
+}
+#previousOperation {
+    border: none;
+    height: 60px;
+    width: 320px;
+    display: flex;
+    justify-content:end;
+    align-items:flex-end;
 }
 #acc {
     margin-left: 10px;
@@ -41,7 +61,7 @@ div{
     justify-content: space-between;
 }
 .acc{
-    border-radius: 5%;
+    border-radius: 5px;
     width: 170px;
     display: flex;
     justify-content: center;
@@ -50,8 +70,16 @@ div{
 #c{
     background-color: rgba(248, 39, 39, 0.6);
 }
+#c:hover{
+    background-color: rgba(248, 39, 39);
+    cursor: pointer;
+}
 #ac{
     background-color: rgba(226, 226, 25, 0.6);
+}
+#ac:hover{
+    background-color: rgba(226, 226, 25);
+    cursor: pointer;
 }
 #input{
     border: none;
@@ -68,7 +96,7 @@ div{
     display: block;
 }
 .input{
-    border-radius: 10%;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,4 +105,13 @@ div{
 .input.operator{
     color: white;
     background-color: rgb(90, 40, 220, 0.5);
+}
+
+.input:hover{
+    background-color: rgba(121, 93, 243);
+    cursor: pointer;
+}
+.input.operator:hover{
+    background-color: rgb(90, 40, 220);
+    cursor: pointer;
 }

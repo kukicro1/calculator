@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <script type="text/javascript" src="calculator.js"></script>
+    <script type="text/javascript" src="calculator.js" defer></script>
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <div id="calculator">
-        <div id="display"></div>
+        <div id="display">
+            <div id="previousOperation"></div>
+            <div id="currentOperation"></div>
+        </div>
         <div id="acc">
             <div class="acc" id="c">C</div>
             <div class="acc" id="ac">AC</div>
         </div>
         <div id="input">
-            <div class="input">7</div>
-            <div class="input">8</div>
-            <div class="input">9</div>
-            <div class="input operator">/</div>
-            <div class="input">4</div>
-            <div class="input">5</div>
-            <div class="input">6</div>
-            <div class="input operator">*</div>
-            <div class="input">1</div>
-            <div class="input">2</div>
-            <div class="input">3</div>
-            <div class="input operator">+</div>
-            <div class="input">.</div>
-            <div class="input">0</div>
-            <div class="input">=</div>
-            <div class="input operator">-</div>
+            <div data-number class="input number">7</div>
+            <div data-number class="input number">8</div>
+            <div data-number class="input number">9</div>
+            <div data-operator class="input operator">/</div>
+            <div data-number class="input number">4</div>
+            <div data-number class="input number">5</div>
+            <div data-number class="input number">6</div>
+            <div data-operator class="input operator">*</div>
+            <div data-number class="input number">1</div>
+            <div data-number class="input number">2</div>
+            <div data-number class="input number">3</div>
+            <div data-operator class="input operator">-</div>
+            <div id="dot" data-decimal class="input number">.</div>
+            <div data-number class="input number">0</div>
+            <div data-equal class="input operator">=</div>
+            <div data-operator class="input operator">+</div>
         </div>
     </div>
 </body>
